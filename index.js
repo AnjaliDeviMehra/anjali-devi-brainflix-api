@@ -1,8 +1,12 @@
 import express from "express";
 import videos from "./routes/videos.js";
 
+import "dotenv/config";
+import cors from "cors";
+
 const app = express();
-const PORT = process.env.PORT || 5231;
+const PORT = process.env.PORT;
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("server is running");
