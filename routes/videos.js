@@ -26,28 +26,6 @@ router.get("/:id", (req, res) => {
   }
 });
 
-// router.post("/", (req, res) => {
-//   const albumObj = req.body;
-//   const newalbum = {
-//     id: crypto.randomUUID(),
-//     title: albumObj.title,
-//   };
-
-//   // const albumData = readData();
-//   // albumData.push(newalbum);
-//   // fs.writeFileSync(FILE_PATH, JSON.stringify(albumData));
-
-//   res.status(201).json(newalbum);
-// });
-
-// router.post("/", (req, res) => {
-//   console.log(req.body);
-//   const newVideo = {
-//     title: "title",
-//   };
-//   res.json(newVideo);
-// });
-
 router.post("/", (req, res) => {
   const videoObject = req.body;
   const newVideo = {
