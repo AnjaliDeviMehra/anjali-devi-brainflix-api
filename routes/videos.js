@@ -54,6 +54,7 @@ router.post("/", (req, res) => {
     id: crypto.randomUUID(),
     title: videoObject.title,
     description: videoObject.description,
+    image: videoObject.image,
   };
 
   const videoData = getData();
