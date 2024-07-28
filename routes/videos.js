@@ -55,6 +55,11 @@ router.post("/", (req, res) => {
     title: videoObject.title,
     description: videoObject.description,
     image: videoObject.image,
+    channel: videoObject.channel,
+    views: videoObject.views,
+    likes: videoObject.likes,
+    timestamp: videoObject.timestamp,
+    comments: videoObject.comments,
   };
 
   const videoData = getData();
